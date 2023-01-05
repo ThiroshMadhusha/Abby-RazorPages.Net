@@ -13,11 +13,14 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Check autherization
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+// Router
 app.UseRouting();
 
+// Authentication User
 app.UseAuthorization();
 
 app.MapRazorPages();
